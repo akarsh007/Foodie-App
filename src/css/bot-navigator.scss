@@ -1,0 +1,114 @@
+.bot-navigator {
+	display:flex;
+	margin-bottom: 0.8em;
+	padding: 10px 20px 10px 20px;
+	width:100%;
+	position:fixed;
+	background:white;
+	z-index: 19;
+}
+
+.bot-picker-container {
+	.module-navigator-faux-search input {
+		font-weight: bold;
+		color: grey;
+	}
+	.botpicker-botname {
+		font-weight: bold
+	}
+}
+
+.automate-search {
+	border: 1px solid #dddddd;
+    border-radius: 2.5px;
+}
+
+.bot-navigator span {
+	margin-right: 0px;
+}
+
+.blue-ribbon {
+	width: 100%;
+	opacity: 0.8;
+	background-image: linear-gradient(to top, #f2fcfe, #1c92d2);
+	padding-bottom: 0;
+	position: absolute;
+	height: 180px;
+	z-index: 0;
+}
+
+.bot-navigator span:first-child strong {
+	font-size: 13px;
+}
+
+.bot-navigator select {
+	background: url('../images/dropdown-large.svg') no-repeat right 5px center white;
+	background-size: 10px 10px;
+  border-radius: 2px;
+  padding: 0;
+	color: #888;
+  border: thin #FFF solid;
+  height: auto;
+  -webkit-appearance: none;
+  padding: 2px 5px;
+  font-size: 12px;
+	padding-right: 25px;
+}
+
+.bot-navigator .module-navigator-container input {
+	border: none;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 0px;
+	padding-left: 5px;
+}
+
+.bot-navigator .status-active-dot {
+	width: 10px;
+	margin-right: 5px;
+}
+
+.test-button {
+	margin-right: 0;
+	margin-left:auto;
+	font-size: 400em;
+}
+
+.messenger-test-button {
+	padding: 0 7px;
+	cursor: pointer;
+	width: 179.4px;
+	height: 30px;
+	border-radius: 39.5px;
+	border: solid 2.5px #13b6f2;
+	text-align: center;
+	transition: 0.3s background linear, 0.3s border linear;
+	a{
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: -0.3px;
+		color: #13b6f2;
+		transition: 0.3s color linear;
+	}
+	.messenger-icon {
+		width: 18px;
+		height: 19px;
+		float: right;
+		margin-left: 5px;
+		background-image: url('../images/messenger-blue.png');
+		background-size: 100% 100%;
+		transition: 0.3s background linear;
+		position: relative;
+		top: 3px;
+	}
+
+	&:hover {
+		background-color: #13b6f2;
+		a{
+			color: #ffffff;
+		}
+		.messenger-icon{
+			background-image: url('../images/messenger-white.png');
+		}
+	}
+}

@@ -1,0 +1,87 @@
+.menu-list {
+  a{
+    padding: 0.5em 1.75em;
+    font-weight: 600;
+    .side-nav-icon{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-size: 16px;
+      vertical-align: middle;
+      margin-right: 5px;
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+    &.is-active .icon-automate{
+      background-image: url("/images/navigation/automate-blue.svg");
+    }
+    .icon-automate{
+      background-image: url("/images/navigation/automate-white.svg");
+    }
+
+    &.automate:hover{
+      .icon-automate {
+        background-image: url("/images/navigation/automate-blue.svg");
+      }
+    }
+
+    &.is-active .icon-keywords{
+      background-image: url("/images/navigation/keywords-blue.svg");
+    }
+    &.keywords:hover{
+      .icon-keywords {
+        background-image: url("/images/navigation/keywords-blue.svg");
+      }
+    }
+    .icon-keywords{
+      background-image: url("/images/navigation/keywords-white.svg");
+    }
+
+    &.is-active .icon-engage{
+      background-image: url("/images/navigation/engage-blue.svg");
+    }
+    .icon-engage{
+      background-image: url("/images/navigation/engage-white.svg");
+    }
+
+    &.engage:hover{
+      .icon-engage {
+        background-image: url("/images/navigation/engage-blue.svg");
+      }
+    }
+
+    &.is-active .icon-grow{
+      background-image: url("/images/navigation/grow-blue.svg");
+    }
+    .icon-grow{
+      background-image: url("/images/navigation/grow-white.svg");
+    }
+
+    &.grow:hover{
+      .icon-grow {
+        background-image: url("/images/navigation/grow-blue.svg");
+      }
+    }
+
+    &.is-active .icon-settings{
+      background-image: url("/images/navigation/settings-blue.svg");
+    }
+    .icon-settings{
+      background-image: url("/images/navigation/settings-white.svg");
+    }
+
+    &.settings:hover{
+      .icon-settings {
+        background-image: url("/images/navigation/settings-blue.svg");
+      }
+    }
+    //.ico {
+    //  margin-right: 10px;
+    //  display: inline-block;
+    //  vertical-align: middle;
+    //}
+    .ico-automate-gray {
+      font-size: 0.27rem;
+    }
+  }
+}

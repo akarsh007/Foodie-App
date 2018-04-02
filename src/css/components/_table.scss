@@ -1,0 +1,37 @@
+.table-wrapper {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #9b9b9b;
+  td, thead th {
+    vertical-align: middle;
+    border-width: 0 0 1px;
+    font-weight: normal;
+  }
+  thead th{
+    color: #9b9b9b;
+  }
+  .restaurant-name {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0;
+    letter-spacing: -0.8px;
+    color: #263c47;
+    max-width: 230px;
+  }
+}
+
+.home-landing {
+  .select {
+    color: #263c47
+  }
+}
+
+.Select-loading {
+  visibility: hidden !important;
+}
+
+.modal-content {
+  height: 70% !important;
+}
+

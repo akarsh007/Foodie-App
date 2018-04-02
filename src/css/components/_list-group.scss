@@ -1,0 +1,16 @@
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &.is-inline{
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.2;
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+    }
+  }
+
+}

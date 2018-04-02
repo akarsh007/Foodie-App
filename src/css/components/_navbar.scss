@@ -1,0 +1,16 @@
+.navbar-item{
+  font-weight: bold;
+  &.user-photo{
+    img{
+      max-height: 2.75rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 70px
+}

@@ -1,0 +1,47 @@
+$botblue : #1c92d2;
+$component-green : #8bc249;
+$component-gold : #ffcf48;
+$component-pink : #e85479;
+$component-red : #eb5637;
+$module-lightgrey : #efebe9;
+$darkbluegrey : #263c47;
+$slate : #515a73;
+$botblue-dark : #0e8ab7;
+$component-tomato : #eb5637;
+$component-blue : #48bfea;
+$component-slate : #656d78;
+$component-lavender : #ac8ff0;
+$component-orange: #f6a623;
+$component-darkgrey: #515a73;
+$purply-pink : #ee85c0;
+$lightgrey : #e4e4e4;
+$lightgrey-two: #9b9b9b;
+$offwhite : #f5f5f5;
+$white-two : #efebe9;
+
+$primary : #13b6f2;
+
+//Navbar
+$navbar-background-color: $botblue !default
+$navbar-height: 4.25rem !default
+$navbar-item-color: #ffffff !default
+$navbar-item-hover-background-color: transparent !default
+
+//Form elements
+$input-color: #363636;
+$label-color: #9b9b9b;
+$label-weight: 500;
+
+//Leftnav //menu
+$menu-item-color: #ffffff;
+$menu-item-hover-color: #000000;
+$menu-item-hover-background-color: rgba(255, 255, 255, 0.3);
+$menu-item-active-color: $menu-item-hover-color;
+$menu-item-active-background-color: $menu-item-hover-background-color;
+$menu-list-border-left: none;
+
+//Modal
+$modal-z: 1000;
+
+// Automate mentions
+$black : #000000;

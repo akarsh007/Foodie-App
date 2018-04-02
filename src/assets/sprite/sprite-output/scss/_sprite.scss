@@ -1,0 +1,328 @@
+.ico {
+    font-size: 16px;
+}
+
+.ico:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../images/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 58.125em 141.4375em;
+}
+
+/*
+.no-svg .ico:before {
+    background-image: url("../images/sprite.png");
+}
+*/
+
+
+
+  .ico.ico-analytics:before {
+      background-position: 0em 0em;
+      width: 2.0625em;
+      height: 2.0625em;
+  }
+
+
+
+
+  .ico.ico-arrow_position:before {
+      background-position: 0em -2.0625em;
+      width: 1.25em;
+      height: 2.75em;
+  }
+
+
+
+
+  .ico.ico-automate-gray:before {
+      background-position: 0em -4.8125em;
+      width: 3.8125em;
+      height: 3.8125em;
+  }
+
+
+
+
+  .ico.ico-bookmark:before {
+      background-position: 0em -8.625em;
+      width: 4.625em;
+      height: 3.375em;
+  }
+
+
+
+
+  .ico.ico-calendar:before {
+      background-position: 0em -12em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-clone:before {
+      background-position: 0em -14.5em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-close-small-default:before {
+      background-position: 0em -17em;
+      width: 1.3125em;
+      height: 1.3125em;
+  }
+
+
+
+
+  .ico.ico-close-small-hover:before {
+      background-position: 0em -18.3125em;
+      width: 1.3125em;
+      height: 1.3125em;
+  }
+
+
+
+
+  .ico.ico-copy:before {
+      background-position: 0em -19.625em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-copy-dark:before {
+      background-position: 0em -22.125em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-crop-reverse:before {
+      background-position: 0em -24.625em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-drag:before {
+      background-position: 0em -27.125em;
+      width: 1em;
+      height: 4.4375em;
+  }
+
+
+
+
+  .ico.ico-drag-handle-large:before {
+      background-position: 0em -31.5625em;
+      width: 5.25em;
+      height: 3.75em;
+  }
+
+
+
+
+  .ico.ico-dropdown-large:before {
+      background-position: 0em -35.3125em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-dropdown-large-white:before {
+      background-position: 0em -37.3125em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-edit:before {
+      background-position: 0em -39.3125em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-expander-down:before {
+      background-position: 0em -41.8125em;
+      width: 1.25em;
+      height: 0.875em;
+  }
+
+
+
+
+  .ico.ico-expander-right:before {
+      background-position: 0em -42.6875em;
+      width: 0.875em;
+      height: 1.25em;
+  }
+
+
+
+
+  .ico.ico-fb:before {
+      background-position: 0em -43.9375em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .ico.ico-image-white:before {
+      background-position: 0em -45.4375em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-json-active:before {
+      background-position: 0em -47.4375em;
+      width: 3.125em;
+      height: 3.125em;
+  }
+
+
+
+
+  .ico.ico-plus-large-default:before {
+      background-position: 0em -50.5625em;
+      width: 3.3125em;
+      height: 3.375em;
+  }
+
+
+
+
+  .ico.ico-plus-large-hover:before {
+      background-position: 0em -53.9375em;
+      width: 3.3125em;
+      height: 3.3125em;
+  }
+
+
+
+
+  .ico.ico-question-mark:before {
+      background-position: 0em -57.25em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-refresh:before {
+      background-position: 0em -59.75em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-settings-gray:before {
+      background-position: 0em -61.75em;
+      width: 3.8125em;
+      height: 3.8125em;
+  }
+
+
+
+
+  .ico.ico-status-dot-active:before {
+      background-position: 0em -65.5625em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .ico.ico-trash:before {
+      background-position: 0em -67.0625em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-trash-hover:before {
+      background-position: 0em -69.5625em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-trash-white:before {
+      background-position: 0em -72.0625em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .ico.ico-users:before {
+      background-position: 0em -74.5625em;
+      width: 2.375em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-users-add:before {
+      background-position: 0em -76.5625em;
+      width: 2.375em;
+      height: 2em;
+  }
+
+
+
+
+  .ico.ico-versions-gray:before {
+      background-position: 0em -78.5625em;
+      width: 3.8125em;
+      height: 3.8125em;
+  }
+
+
+
+
+  .ico.ico-white:before {
+      background-position: 0em -82.375em;
+      width: 58.125em;
+      height: 59.0625em;
+  }
+
+
+
+
+

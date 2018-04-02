@@ -1,0 +1,234 @@
+.drag-handle {
+  cursor: move;
+  width: 17px;
+  height: 60px;
+  background-image: url(/images/drag-handle-large.svg);
+  background-size: 39px;
+  background-repeat: no-repeat;
+  display: block;
+  visibility: hidden;
+}
+
+.no-drag-handle {
+  cursor: move;
+  width: 0px;
+  height: 40px;
+  background-size: 39px;
+  background-repeat: no-repeat;
+  display: block;
+  visibility: hidden;
+}
+
+.sortable-sub-component, .sortable-sub-component-list {
+	position: relative;
+}
+
+.sortable-sub-component:hover > .sortable-list-drag-handle.drag-handle,
+.component:hover .component-drag-handle.drag-handle,
+.sortable-sub-component-list:hover .sortable-list-drag-handle.drag-handle {
+	width: 17px !important;
+  visibility: visible;
+}
+
+.sortable-sub-component .sortable-list-drag-handle.drag-handle,
+.component .component-drag-handle.drag-handle,
+.sortable-sub-component-list .sortable-list-drag-handle.drag-handle {
+  background-image: url(/images/arrow_position.svg);
+  background-size: 10px;
+  background-position: 2px 5px;
+  position:absolute;
+  left: -5px;
+	height: 60px;
+	top: 10px;
+	z-index: 1;
+}
+.buttons-and-quick-replies-container .sortable-list-drag-handle.drag-handle {
+  top: -1px;
+}
+
+.configurator .sortable-sub-component .sortable-list-drag-handle.drag-handle,
+.configurator .component .component-drag-handle.drag-handle,
+.configurator .sortable-sub-component-list .sortable-list-drag-handle.drag-handle {
+    width:0;
+}
+
+.module-container {
+	margin-right: 5px;
+	font-size: 10px;
+	background: $lightgrey;
+	color: black;
+	padding: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radis: 3px;
+	font-weight: bold;
+}
+
+.module-container img {
+	width: 8px;
+	margin-left: 5px;
+	cursor:pointer;
+}
+
+.module-container .drag-handle {
+	width: 14px;
+}
+
+.remove-sortable-item {
+    width: 22px !important;
+    margin-left: 15px;
+    padding: 0px !important;
+    position: relative;
+    top: 10px;
+}
+
+.button-type-and-label {
+	display:flex;
+}
+
+.button-type-and-label input {
+	margin-left:5px;
+}
+
+.text-field {
+	display:flex;
+	min-width: 80%;
+}
+
+.text-field .character-counter {
+	margin-left:auto;
+  right: 0;
+  min-width: 50px;
+  padding-right: 10px;
+	text-align: right;
+}
+
+.character-count {
+	margin-top: 4px;
+	margin-left: 1px;
+}
+
+.component textarea {
+	resize: none;
+}
+
+.component-buttons .button {
+	border: 2.5px dashed $lightgrey;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -0.3px;
+	padding:0 0.75rem;
+	height:inherit;
+	display: inline-block;
+
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-left: 2.3rem;
+
+	background-repeat : no-repeat;
+	background-position: 10px 7px;
+	background-size: 20px;
+}
+
+.component-buttons .button:hover {
+	border-style:solid;
+	border-color : $botblue;
+	background-color: $botblue;
+	color: white;
+}
+
+/* Default States */
+
+.component-buttons .button.Text {
+	background-image: url('/images/icons/Color/Text-color.svg');
+}
+
+.component-buttons .button.Pause {
+	background-image: url('/images/icons/Color/Pause-color.svg');
+}
+
+.component-buttons .button.Image {
+	background-image: url('/images/icons/Color/Image-color.svg');
+}
+
+.component-buttons .button.Gallery {
+	background-image: url('/images/icons/Color/Gallery-color.svg');
+}
+
+.component-buttons .button.List {
+	background-image: url('/images/icons/Color/List-color.svg');
+}
+
+.component-buttons .button.Typing {
+	background-image: url('/images/icons/Color/Typing-color.svg');
+}
+
+.component-buttons .button.Audio {
+	background-image: url('/images/icons/Color/Audio-color.svg');
+}
+
+.component-buttons .button.Custom {
+	background-image: url('/images/icons/Color/Custom-color.svg');
+}
+
+.component-buttons .button.File {
+	background-image: url('/images/icons/Color/File-color.svg');
+}
+
+.component-buttons .button.GoToModule {
+	background-image: url('/images/icons/Color/GoToModule-color.svg');
+}
+
+.component-buttons .button.GetLocation {
+	background-image: url('/images/icons/Color/GetLocation-color.svg');
+}
+
+.component-buttons .button.StoreInput,  .component-buttons .button.SetAttribute{
+	background-image: url('/images/icons/Color/SaveInput-color.svg');
+}
+
+.component-buttons .button.Video {
+	background-image: url('/images/icons/Color/Video-color.svg');
+}
+
+/* Hover States */
+
+.component-buttons .button.Text:hover {
+	background-image: url('/images/icons/White/Text-white.svg');
+}
+.component-buttons .button.Pause:hover {
+	background-image: url('/images/icons/White/Pause-white.svg');
+}
+.component-buttons .button.Image:hover {
+	background-image: url('/images/icons/White/Image-white.svg');
+}
+.component-buttons .button.Gallery:hover {
+	background-image: url('/images/icons/White/Gallery-white.svg');
+}
+.component-buttons .button.List:hover {
+	background-image: url('/images/icons/White/List-white.svg');
+}
+.component-buttons .button.Typing:hover {
+	background-image: url('/images/icons/White/Typing-white.svg');
+}
+.component-buttons .button.Audio:hover {
+	background-image: url('/images/icons/White/Audio-white.svg');
+}
+.component-buttons .button.Custom:hover {
+	background-image: url('/images/icons/White/Custom-white.svg');
+}
+.component-buttons .button.File:hover {
+	background-image: url('/images/icons/White/File-white.svg');
+}
+.component-buttons .button.GoToModule:hover {
+	background-image: url('/images/icons/White/GoToModule-white.svg');
+}
+.component-buttons .button.GetLocation:hover {
+	background-image: url('/images/icons/White/GetLocation-white.svg');
+}
+.component-buttons .button.StoreInput:hover,  .component-buttons .button.SetAttribute:hover{
+	background-image: url('/images/icons/White/SaveInput-white.svg');
+}
+.component-buttons .button.Video:hover {
+	background-image: url('/images/icons/White/Video-white.svg');
+}

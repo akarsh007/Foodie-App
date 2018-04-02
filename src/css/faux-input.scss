@@ -1,0 +1,171 @@
+.faux-input {
+	border-radius: 2.5px;
+	overflow-x: hidden;
+	background-color: #ffffff;
+	border: solid 1px $lightgrey;
+	padding: 2px;
+	cursor: pointer;
+    height: 27px;
+	margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.faux-input span.placeholder {
+	color: #717171;
+    font-size: 80%;
+    position: relative;
+    top: -2px;
+    letter-spacing: 0.01em;
+    left: 5px;
+}
+
+.faux-input .selected-item {
+  display: inline-block;
+  background: $component-orange;
+  color: white;
+  font-size: 12px;
+  padding: 0px 5px 0px 4px;
+  margin-right: 4px;
+  position: relative;
+  &.system-variable{
+	  background: $component-darkgrey
+  }
+}
+
+.faux-input .selected-item .remove-selected-item img {
+	width: 14px;
+	height: 14px;
+	position:relative;
+	left: 12px;
+	top: 3px;
+}
+
+.getlocation .module-navigator-container .faux-input {
+	font-size: 12px;
+}
+
+.module-navigator-faux-search .selected-item, .getlocation .module-navigator-container .selected-item {
+	display: inline-block;
+	background: $lightgrey;
+	color: black;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-right: 4px;
+	position:relative;
+	border-color: #dbdbdb;
+  color: #363636;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+	padding: 2px 10px 0px;
+	padding-right: 10px;
+}
+
+.module-navigator-faux-search .placeholder, .getlocation .module-navigator-container .placeholder {
+	font-size: 0.75rem;
+	color: $lightgrey-two;
+}
+
+.selected-item .remove-selected-module {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/trash-white.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+.selected-item .remove-selected-module:hover {
+    background-image: url(/images/trash-hover.svg);
+}
+
+.getlocation .module-navigator-container .selected-item .remove-selected-module, .getlocation .module-navigator-container .selected-item .remove-selected-module:hover {
+	background: none;
+}
+
+.faux-input input {
+	border:none;
+	width: 100%;
+	padding: 4px
+}
+
+.faux-input input:focus {
+	outline: none;
+}
+
+.variable-selector-height{
+  max-height: 30vh;
+  overflow-y: auto;
+}
+
+.faux-input-options {
+	position: absolute;
+	margin-top:-5px;
+	z-index: 1;
+	border-radius: 2.5px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	padding: 5px;
+}
+
+.faux-input-options hr {
+	margin: 0;
+}
+
+.faux-input-options .selectable-option, .faux-input-options .selectable-option-variable{
+	padding: 0 5px;
+	cursor:pointer;
+}
+
+.faux-input-options .selectable-option:hover{
+	background: $botblue;
+	color: white;
+}
+
+.faux-input button.remove-item {
+	top: 0 !important;
+	right: -3px !important;
+}
+
+.selected-item .selected-item-remove-button {
+	background-image: url(/images/close-small-default.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  background-position: center;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  right: 4px;
+  cursor:pointer;
+}
+
+.selected-item .selected-item-remove-button:hover {
+	background-image: url(/images/close-small-hover.svg);
+}
+
+.set-attribute-container .faux-input-container {
+	width: 100%;
+}
+
+.faux-input-text-container {
+	position: relative;
+}
+
+.faux-input-text-container input {
+	//color: rgba(0,0,0,0);
+}
+
+.faux-input-text-container .faux-input-text-display {
+	position: absolute;
+	background: $component-orange;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 0 0.8em;
+    font-size: 85%;
+}

@@ -1,0 +1,66 @@
+.dashboard-landing{
+  .center-content{
+    padding: 10px 26px;
+  }
+  .dashboard-header{
+    position: fixed;
+    right: 24px;
+    left: 182px;
+    padding-left: 18px;
+    background: #fff;
+    z-index: 10;
+    top: 82px;
+    .ico-status-dot-active{
+      font-size: 8px;
+      margin-right: 5px;
+      vertical-align: middle;
+      position: relative;
+      top: -3px;
+    }
+  }
+  .select{
+    background: url(../images/dropdown-large.svg) no-repeat right 5px center white;
+    background-size: 10px 10px;
+    border-radius: 2px;
+    padding: 0;
+    color: #888;
+    border: thin #FFF solid;
+    height: auto;
+    -webkit-appearance: none;
+    padding: 2px 5px;
+    font-size: 12px;
+    padding-right: 25px;
+  }
+  .status-active-dot{
+    width: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+.settings-heading {
+  margin-bottom: 40px;
+}
+.settings-content{
+  margin: 0 -46px;
+  padding: 80px 46px 20px 46px;
+  position: relative;
+  margin-bottom: 50px;
+  //overflow: auto;
+  min-height: calc(100vh - #{148px});
+  &.automate-landing{
+    min-height: calc(100vh - #{96px});
+  }
+  &.keyword-landing{
+    min-height: calc(100vh - #{96px});
+  }
+  &.engage-landing{
+    min-height: calc(100vh - #{96px});
+    padding-bottom: 100px;
+  }
+}
+.settings-table{
+  .table{
+    margin-bottom: 0;
+  }
+}

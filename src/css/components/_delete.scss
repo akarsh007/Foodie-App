@@ -1,0 +1,12 @@
+.delete{
+  background-color: transparent;
+  transition: transform 0.2s linear ;
+  &:hover,&:focus{
+    background-color: transparent;
+    transform: scale(1.1, 1.1);
+  }
+  &:before,&:after{
+    background-color: #909090;
+  }
+
+}

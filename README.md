@@ -1,2 +1,6 @@
-# Foodie-App
-A lite version of zomato restaurant search using the zomato api built on React/Redux
+
+
+Instructions to run the application
+
+yarn install
+yarn start

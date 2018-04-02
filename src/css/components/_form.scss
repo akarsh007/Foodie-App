@@ -1,0 +1,19 @@
+.field{
+  &:not(:last-child){
+    margin-bottom: 1.5rem;
+    .login-modal &{
+      margin-bottom: 0.75rem;
+    }
+  }
+  &.is-horizontal{
+    .label{
+      text-align: left;
+    }
+
+  }
+  &.is-large-label{
+    .field-body{
+      flex-grow: 4;
+    }
+  }
+}

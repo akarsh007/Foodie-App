@@ -1,0 +1,23 @@
+.hero{
+  .hero-body{
+    padding: 1.5rem 1.5rem;
+  }
+  &.is-info {
+    background-color: $botblue;
+    .title {
+      font-weight: bold;
+      line-height: 0.94;
+      letter-spacing: -0.7px;
+      text-align: left;
+      color: #263c47;
+      margin-bottom: 10px;
+    }
+    .subtitle{
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.75;
+      letter-spacing: -0.5px;
+      text-align: left;
+    }
+  }
+}
