@@ -1,6 +1,6 @@
     
     
-    A restaurant searching app which uses React/Redux 
+    A restaurant searching app which uses React/Redux and Zomato API.
 
     Assumptions: 
    
