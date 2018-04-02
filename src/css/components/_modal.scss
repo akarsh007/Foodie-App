@@ -4,63 +4,23 @@
   }
   .modal-content{
     position: relative;
-    &.login-modal{
-      width: 371px;
-      //padding: 20px;
-      .box{
-        padding: 1.9rem;
-      }
-      .is-login-large{
-        font-weight: bold;
-        font-size: 18px;
-      }
-    }
+  }
+  .box{
+    background-color: #494949 !important;
   }
   .delete{
     position: absolute;
     top: 5px;
     right: 5px;
   }
-
-}
-
-.padding-test-message{
-  padding-bottom: 40px;
-  margin-top: -20px;
-  font-weight: bold;
-}
-
-.login-seperator{
-  padding: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  color: #9b9b9b;
-  position: relative;
-  background-color: #ffffff;
-  margin-bottom: 1.25rem;
-  &:before,
-  &:after{
-    content: " ";
-    height: 1px;
-    border: solid 1px #e4e4e4;
-    position: absolute;
-    top: 20px;
-  }
-  &:before{
-    right: 187px;
-    left: 0;
-  }
-  &:after{
-    left: 190px;
-    right: 0;
-  }
 }
 
 
-.delete-modal-text{
-  font-size: 14px;
-  text-align: left;
-  color: #263c47;
-  margin-bottom: 25px;
+.modal {
+  z-index: 40 !important;
+}
+
+.modal-background {
+  background-image: url(../images/background.jpg);
+  opacity: 1
 }

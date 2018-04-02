@@ -16,7 +16,6 @@
     font-weight: bold;
     line-height: 1.0;
     letter-spacing: -0.8px;
-    color: #263c47;
     max-width: 230px;
   }
 }
@@ -32,6 +31,15 @@
 }
 
 .modal-content {
-  height: 70% !important;
+  height: 80% !important;
 }
 
+
+.gap-t-30 {
+  padding-top: 30px;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #13b6f2 !important;
+}
