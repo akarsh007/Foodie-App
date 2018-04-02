@@ -1,6 +1,6 @@
-
 import * as Api from './api'
 import * as actionConstants from '../actions/actionConstants'
+import * as apiActionConstants from '../actions/apiActionConstants'
 import * as loaderUpdates from './loaderUpdates';
 
 
@@ -11,10 +11,10 @@ function reducer(state = {} , action){
 	var returnState;
 
 	switch(action.type){
-		case "SET_OTHER_VALUES":
+		case apiActionConstants.SET_OTHER_VALUES:
 			returnState = Api.SetOtherValues(state, action);
 		break;
-        case "SET_RESTAURANT_LIST":
+        case apiActionConstants.SET_RESTAURANT_LIST:
             returnState = Api.SetRestaurantList(state, action);
         break;
 		case actionConstants.API_FETCH_START:

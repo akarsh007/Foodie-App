@@ -7,7 +7,10 @@ class Accounts extends Component {
         super(props)
         this.state = {
             showRestaurantDetailModal: false,
-            selectedRestaurant: {}
+            selectedRestaurant: {},
+            restaurantList: [],
+            filterValue : 0,
+            sortAscending : false
         }
     }
 
@@ -21,9 +24,12 @@ class Accounts extends Component {
                 this.props.getLocalityRestaurants(this.props.otherValues, this.props.cityId)
 
         }
+
     }
 
     componentWillReceiveProps(nextProps){
+        if(nextProps.restaurantList && nextProps.restaurantList.length)
+            this.setState({restaurantList: nextProps.restaurantList})
     }
 
     closeRestaurantDetailsModal = () => {
@@ -33,6 +39,28 @@ class Accounts extends Component {
     showRestaurantDetails = (restaurantId) => {
         let selectedRestaurant = this.props.restaurantList.filter((restaurant) => restaurant.id === restaurantId)
         this.setState({selectedRestaurant}, () => this.setState({showRestaurantDetailModal: true}))
+    }
+
+    sortByRating = () => {
+        if(this.state.restaurantList) {
+            let restaurantList = [...this.state.restaurantList]
+            let sortAscending = this.state.sortAscending
+            this.sortArrOfObjects(restaurantList, 'rating')
+            this.setState({restaurantList: (sortAscending ? restaurantList.reverse() : restaurantList), sortAscending: !sortAscending})
+        }
+    }
+
+    sortArrOfObjects = (arr, key) =>{
+        arr.sort(function (a, b) {
+            return b[key] - a[key]
+        })
+    }
+
+    handleFilterOptionChange = (event) => {
+        this.setState({filterValue: event.target.value})
+        if(this.props.restaurantList)
+            this.setState({restaurantList: this.props.restaurantList.filter((restaurant) => restaurant.rating >= event.target.value)})
+
     }
 
     restaurantRow = (restaurant, index) => {
@@ -70,7 +98,7 @@ class Accounts extends Component {
     };
 
     render() {
-        let {restaurantList} =this.props
+        let restaurantList =this.state.restaurantList
         return (
             <div className="home-landing">
                 <Header>
@@ -91,18 +119,43 @@ class Accounts extends Component {
                     restaurant = {this.state.selectedRestaurant[0]}
                     closeRestaurantDetailsModal={this.closeRestaurantDetailsModal}
                 />}
-                <div className="container is-fluid gap-t-60">
-                    <table className="table table-wrapper is-fullwidth">
+                <div className="container is-fluid ">
+                    <div className='is-pulled-right'>
+                        <div style={{color: '#9b9b9b'}}>
+                            Filter by Rating &nbsp;
+                            <select value={this.state.filterValue} onChange={this.handleFilterOptionChange}>
+                                <option value={0}>Show All</option>
+                                <option value={4}>Above 4</option>
+                                <option value={3}>Above 3</option>
+                                <option value={2}>Above 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table className="table table-wrapper is-fullwidth ">
                         <thead>
                         <tr>
                             <th className='w-40'>Restaurant Name</th>
                             <th className='w-40'>Cuisines</th>
                             <th className='w-40'>Locality</th>
-                            <th className='w-25'>Rating</th>
+                            <th className='w-25 clickable' onClick={() => {this.sortByRating()}}>Rating</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {restaurantList && restaurantList.map(this.restaurantRow)}
+                        {restaurantList && restaurantList.length ?
+                            restaurantList.map(this.restaurantRow)
+                        :
+                            <tr>
+                                <td>
+                                    <ul className="list is-inline">
+                                        <li>
+                                            <span className="restaurant-name">
+                                                Sorry!! No Restaurant present.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        }
                         </tbody>
                     </table>
 

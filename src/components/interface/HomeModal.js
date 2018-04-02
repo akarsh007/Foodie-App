@@ -147,7 +147,7 @@ class HomeModal extends Component {
                 <div className="modal-content">
                     <div className="box">
                         <div className="is-clearfix modal-header">
-                            <span className="title">Welcome to the Foodie app!!</span>
+                            <span className="title app-font-color">Welcome to the Foodie app!!</span>
                         </div>
 
                         <div className="field columns is-horizontal">
@@ -165,7 +165,7 @@ class HomeModal extends Component {
                                                 onChange={this.handleCityChange}
                                                 valueKey="id"
                                                 labelKey="name"
-                                                placeholder='Enter City Name'
+                                                loadingPlaceholder='Enter City Name'
                                             />
                                             </div>
                                         <div></div><br/><br/>
@@ -191,6 +191,7 @@ class HomeModal extends Component {
                                                 onChange={this.handleRestaurantChange}
                                                 valueKey="id"
                                                 labelKey="name"
+                                                loadingPlaceholder='Type a Restaurant Name'
                                             />
                                         </div>
                                         <div></div><br/><br/>
@@ -217,6 +218,7 @@ class HomeModal extends Component {
                                                 onChange={this.handleOtherValueChange}
                                                 valueKey="id"
                                                 labelKey="name"
+                                                loadingPlaceholder='Type a Cuisine, Category or a Locality'
                                             />
                                         </div>
                                         <div></div><br/><br/>

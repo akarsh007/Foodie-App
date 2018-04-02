@@ -33,7 +33,7 @@ class RestaurantDetails extends Component {
                     <div className="box">
 
                         <div className="is-clearfix modal-header">
-                            <span className="title">{this.props.restaurant.name}</span>
+                            <span className="title app-font-color">{this.props.restaurant.name}</span>
                             <button onClick={this.closeModal} className="delete is-large is-pulled-right" aria-label="close"></button>
                         </div>
                         <div>

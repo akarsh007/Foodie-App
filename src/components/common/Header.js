@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 class Header extends Component {
     constructor(props){
         super(props);
@@ -15,9 +15,9 @@ class Header extends Component {
             <div className= 'bw-header'>
                 <nav className="navbar">
                     <div className="navbar-brand">
-                        <a className="left-nav-logo" href="/" style={{width: '170px'}}>
-                            Homepage
-                        </a>
+                        <Link to={'/'} className="left-nav-logo" style={{width: '170px'}}>
+                            <span className='app-font-color'>Homepage</span>
+                        </Link>
                     </div>
                 </nav>
                 {this.props.children}
